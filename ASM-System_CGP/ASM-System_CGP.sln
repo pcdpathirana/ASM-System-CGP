@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASM-System_CGP", "ASM-System_CGP\ASM-System_CGP.csproj", "{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA5FF688-068F-41FD-9E8B-A0C4D35C4B09}
+	EndGlobalSection
+EndGlobal
