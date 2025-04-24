@@ -1,4 +1,4 @@
-﻿namespace ASM_System_CGP
+﻿namespace WindowsFormsApp1
 {
     partial class SystemDashboard
     {
@@ -74,28 +74,31 @@
             this.panelChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChart.Location = new System.Drawing.Point(266, 88);
             this.panelChart.Name = "panelChart";
-            this.panelChart.Size = new System.Drawing.Size(1097, 430);
+            this.panelChart.Size = new System.Drawing.Size(1086, 370);
             this.panelChart.TabIndex = 79;
+            this.panelChart.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChart_Paint_1);
             // 
             // lblcashvalue
             // 
             this.lblcashvalue.AutoSize = true;
             this.lblcashvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcashvalue.Location = new System.Drawing.Point(155, 141);
+            this.lblcashvalue.Location = new System.Drawing.Point(164, 139);
             this.lblcashvalue.Name = "lblcashvalue";
             this.lblcashvalue.Size = new System.Drawing.Size(30, 16);
             this.lblcashvalue.TabIndex = 56;
             this.lblcashvalue.Text = "N/A";
+            this.lblcashvalue.Click += new System.EventHandler(this.lblcashvalue_Click_1);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 141);
+            this.label4.Location = new System.Drawing.Point(30, 139);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 16);
             this.label4.TabIndex = 55;
             this.label4.Text = "Availble Cash Value :";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // button6
             // 
@@ -103,12 +106,13 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(149, 77);
+            this.button6.Location = new System.Drawing.Point(158, 75);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 47);
             this.button6.TabIndex = 54;
             this.button6.Text = "Out";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // button5
             // 
@@ -116,22 +120,24 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(24, 77);
+            this.button5.Location = new System.Drawing.Point(33, 75);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 47);
             this.button5.TabIndex = 53;
             this.button5.Text = "In";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 41);
+            this.label3.Location = new System.Drawing.Point(30, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 1;
             this.label3.Text = "Cash Value";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // button17
             // 
@@ -145,6 +151,7 @@
             this.button17.TabIndex = 66;
             this.button17.Text = "Create Payment";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click_1);
             // 
             // button16
             // 
@@ -158,6 +165,7 @@
             this.button16.TabIndex = 65;
             this.button16.Text = "Customers Management";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click_1);
             // 
             // button15
             // 
@@ -171,6 +179,7 @@
             this.button15.TabIndex = 64;
             this.button15.Text = "Manage\r\nShop Details\r\n\r\n";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // button14
             // 
@@ -184,6 +193,7 @@
             this.button14.TabIndex = 63;
             this.button14.Text = "Year End";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click_1);
             // 
             // button13
             // 
@@ -197,6 +207,7 @@
             this.button13.TabIndex = 62;
             this.button13.Text = "Month End";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click_1);
             // 
             // button12
             // 
@@ -210,6 +221,7 @@
             this.button12.TabIndex = 61;
             this.button12.Text = "Day End";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // button11
             // 
@@ -223,6 +235,7 @@
             this.button11.TabIndex = 60;
             this.button11.Text = "Manage\r\nUser Account\r\n";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
             // button10
             // 
@@ -236,6 +249,7 @@
             this.button10.TabIndex = 59;
             this.button10.Text = "Create\r\nReservation";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click_1);
             // 
             // button9
             // 
@@ -263,10 +277,11 @@
             this.panel6.Controls.Add(this.button10);
             this.panel6.Controls.Add(this.button9);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(357, 0);
+            this.panel6.Location = new System.Drawing.Point(346, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(740, 316);
             this.panel6.TabIndex = 57;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint_1);
             // 
             // panel5
             // 
@@ -279,18 +294,20 @@
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.txtcashvalue);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(266, 518);
+            this.panel5.Location = new System.Drawing.Point(266, 458);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1097, 316);
+            this.panel5.Size = new System.Drawing.Size(1086, 316);
             this.panel5.TabIndex = 78;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
             // 
             // txtcashvalue
             // 
             this.txtcashvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcashvalue.Location = new System.Drawing.Point(103, 38);
+            this.txtcashvalue.Location = new System.Drawing.Point(112, 36);
             this.txtcashvalue.Name = "txtcashvalue";
             this.txtcashvalue.Size = new System.Drawing.Size(146, 22);
             this.txtcashvalue.TabIndex = 0;
+            this.txtcashvalue.TextChanged += new System.EventHandler(this.txtcashvalue_TextChanged_1);
             // 
             // panel4
             // 
@@ -299,8 +316,9 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(266, 47);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1097, 41);
+            this.panel4.Size = new System.Drawing.Size(1086, 41);
             this.panel4.TabIndex = 77;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
             // 
             // label2
             // 
@@ -314,6 +332,7 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "DASHBOARD";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // btnmaxmin
             // 
@@ -325,6 +344,7 @@
             this.btnmaxmin.TabIndex = 5;
             this.btnmaxmin.Text = "⛶";
             this.btnmaxmin.UseVisualStyleBackColor = false;
+            this.btnmaxmin.Click += new System.EventHandler(this.btnmaxmin_Click_1);
             // 
             // button2
             // 
@@ -336,6 +356,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label1
             // 
@@ -349,6 +370,7 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "VEHICLE PURCHASE DETAILS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // btnminimize
             // 
@@ -360,6 +382,7 @@
             this.btnminimize.TabIndex = 6;
             this.btnminimize.Text = "_";
             this.btnminimize.UseVisualStyleBackColor = false;
+            this.btnminimize.Click += new System.EventHandler(this.btnminimize_Click_1);
             // 
             // panel3
             // 
@@ -369,6 +392,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(945, 41);
             this.panel3.TabIndex = 76;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
             // 
             // panel2
             // 
@@ -379,8 +403,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(266, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1097, 47);
+            this.panel2.Size = new System.Drawing.Size(1086, 47);
             this.panel2.TabIndex = 75;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
             // panel1
             // 
@@ -394,8 +419,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(266, 834);
+            this.panel1.Size = new System.Drawing.Size(266, 774);
             this.panel1.TabIndex = 74;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // button8
             // 
@@ -414,6 +440,7 @@
             this.button8.Text = "Purchase Details";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button7
             // 
@@ -432,6 +459,7 @@
             this.button7.Text = "Sign OUT";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // button4
             // 
@@ -450,6 +478,7 @@
             this.button4.Text = "Sales History";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button3
             // 
@@ -468,6 +497,7 @@
             this.button3.Text = "Statistics";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button1
             // 
@@ -486,6 +516,7 @@
             this.button1.Text = "Add Vehicle";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btndashboard
             // 
@@ -504,12 +535,13 @@
             this.btndashboard.Text = "Dashboard";
             this.btndashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndashboard.UseVisualStyleBackColor = false;
+            this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click_1);
             // 
             // SystemDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1363, 834);
+            this.ClientSize = new System.Drawing.Size(1352, 774);
             this.Controls.Add(this.panelChart);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);

@@ -1,0 +1,5 @@
+C:\Users\Chithma Dilmin\Documents\GitHub\ASM-System-CGP\ASM-System_CGP\ASM-System_CGP\obj\Debug\ASM-System_CGP.csproj.AssemblyReference.cache
+C:\Users\Chithma Dilmin\Documents\GitHub\ASM-System-CGP\ASM-System_CGP\ASM-System_CGP\obj\Debug\ASM_System_CGP.Properties.Resources.resources
+C:\Users\Chithma Dilmin\Documents\GitHub\ASM-System-CGP\ASM-System_CGP\ASM-System_CGP\obj\Debug\WindowsFormsApp1.SystemDashboard.resources
+C:\Users\Chithma Dilmin\Documents\GitHub\ASM-System-CGP\ASM-System_CGP\ASM-System_CGP\obj\Debug\ASM-System_CGP.csproj.GenerateResource.cache
+C:\Users\Chithma Dilmin\Documents\GitHub\ASM-System-CGP\ASM-System_CGP\ASM-System_CGP\obj\Debug\ASM-System_CGP.csproj.CoreCompileInputs.cache
