@@ -175,5 +175,10 @@ namespace WindowsFormsApp1
                 butlogin.PerformClick();
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
