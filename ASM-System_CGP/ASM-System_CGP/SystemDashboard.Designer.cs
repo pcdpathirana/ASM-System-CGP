@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.panelChart = new System.Windows.Forms.Panel();
-            this.lblcashvalue = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -44,29 +39,40 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblcashvalue = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtcashvalue = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.btnmaxmin = new System.Windows.Forms.Button();
+            this.btnminimize = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnminimize = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btndashboard = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelChart
@@ -76,68 +82,6 @@
             this.panelChart.Name = "panelChart";
             this.panelChart.Size = new System.Drawing.Size(1086, 370);
             this.panelChart.TabIndex = 79;
-            this.panelChart.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChart_Paint_1);
-            // 
-            // lblcashvalue
-            // 
-            this.lblcashvalue.AutoSize = true;
-            this.lblcashvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcashvalue.Location = new System.Drawing.Point(164, 139);
-            this.lblcashvalue.Name = "lblcashvalue";
-            this.lblcashvalue.Size = new System.Drawing.Size(30, 16);
-            this.lblcashvalue.TabIndex = 56;
-            this.lblcashvalue.Text = "N/A";
-            this.lblcashvalue.Click += new System.EventHandler(this.lblcashvalue_Click_1);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 139);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 16);
-            this.label4.TabIndex = 55;
-            this.label4.Text = "Availble Cash Value :";
-            this.label4.Click += new System.EventHandler(this.label4_Click_1);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button6.Location = new System.Drawing.Point(158, 75);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 47);
-            this.button6.TabIndex = 54;
-            this.button6.Text = "Out";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button5.Location = new System.Drawing.Point(33, 75);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 47);
-            this.button5.TabIndex = 53;
-            this.button5.Text = "In";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 16);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Cash Value";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // button17
             // 
@@ -151,7 +95,6 @@
             this.button17.TabIndex = 66;
             this.button17.Text = "Create Payment";
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click_1);
             // 
             // button16
             // 
@@ -165,7 +108,6 @@
             this.button16.TabIndex = 65;
             this.button16.Text = "Customers Management";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click_1);
             // 
             // button15
             // 
@@ -179,7 +121,6 @@
             this.button15.TabIndex = 64;
             this.button15.Text = "Manage\r\nShop Details\r\n\r\n";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click_1);
             // 
             // button14
             // 
@@ -193,7 +134,6 @@
             this.button14.TabIndex = 63;
             this.button14.Text = "Year End";
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click_1);
             // 
             // button13
             // 
@@ -207,7 +147,6 @@
             this.button13.TabIndex = 62;
             this.button13.Text = "Month End";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click_1);
             // 
             // button12
             // 
@@ -221,7 +160,6 @@
             this.button12.TabIndex = 61;
             this.button12.Text = "Day End";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click_1);
             // 
             // button11
             // 
@@ -235,7 +173,6 @@
             this.button11.TabIndex = 60;
             this.button11.Text = "Manage\r\nUser Account\r\n";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click_1);
             // 
             // button10
             // 
@@ -249,7 +186,6 @@
             this.button10.TabIndex = 59;
             this.button10.Text = "Create\r\nReservation";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click_1);
             // 
             // button9
             // 
@@ -263,7 +199,6 @@
             this.button9.TabIndex = 58;
             this.button9.Text = "See Vehicle\r\nStatus";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel6
             // 
@@ -281,7 +216,70 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(740, 316);
             this.panel6.TabIndex = 57;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint_1);
+            // 
+            // lblcashvalue
+            // 
+            this.lblcashvalue.AutoSize = true;
+            this.lblcashvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcashvalue.Location = new System.Drawing.Point(155, 141);
+            this.lblcashvalue.Name = "lblcashvalue";
+            this.lblcashvalue.Size = new System.Drawing.Size(30, 16);
+            this.lblcashvalue.TabIndex = 56;
+            this.lblcashvalue.Text = "N/A";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(21, 141);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(134, 16);
+            this.label4.TabIndex = 55;
+            this.label4.Text = "Availble Cash Value :";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button6.Location = new System.Drawing.Point(149, 77);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(100, 47);
+            this.button6.TabIndex = 54;
+            this.button6.Text = "Out";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button5.Location = new System.Drawing.Point(24, 77);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 47);
+            this.button5.TabIndex = 53;
+            this.button5.Text = "In";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Cash Value";
+            // 
+            // txtcashvalue
+            // 
+            this.txtcashvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcashvalue.Location = new System.Drawing.Point(103, 38);
+            this.txtcashvalue.Name = "txtcashvalue";
+            this.txtcashvalue.Size = new System.Drawing.Size(146, 22);
+            this.txtcashvalue.TabIndex = 0;
             // 
             // panel5
             // 
@@ -298,65 +296,60 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1086, 316);
             this.panel5.TabIndex = 78;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint_1);
             // 
-            // txtcashvalue
+            // panel2
             // 
-            this.txtcashvalue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcashvalue.Location = new System.Drawing.Point(112, 36);
-            this.txtcashvalue.Name = "txtcashvalue";
-            this.txtcashvalue.Size = new System.Drawing.Size(146, 22);
-            this.txtcashvalue.TabIndex = 0;
-            this.txtcashvalue.TextChanged += new System.EventHandler(this.txtcashvalue_TextChanged_1);
+            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(266, 41);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1086, 47);
+            this.panel2.TabIndex = 75;
             // 
-            // panel4
+            // panel7
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(266, 47);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1086, 41);
-            this.panel4.TabIndex = 77;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint_1);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label2.Location = new System.Drawing.Point(416, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 25);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "DASHBOARD";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            this.panel7.Controls.Add(this.btnmaxmin);
+            this.panel7.Controls.Add(this.btnminimize);
+            this.panel7.Controls.Add(this.button2);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(960, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(126, 47);
+            this.panel7.TabIndex = 7;
             // 
             // btnmaxmin
             // 
             this.btnmaxmin.BackColor = System.Drawing.Color.Transparent;
             this.btnmaxmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmaxmin.Location = new System.Drawing.Point(1008, 12);
+            this.btnmaxmin.Location = new System.Drawing.Point(46, 7);
             this.btnmaxmin.Name = "btnmaxmin";
             this.btnmaxmin.Size = new System.Drawing.Size(30, 30);
             this.btnmaxmin.TabIndex = 5;
             this.btnmaxmin.Text = "⛶";
             this.btnmaxmin.UseVisualStyleBackColor = false;
-            this.btnmaxmin.Click += new System.EventHandler(this.btnmaxmin_Click_1);
+            // 
+            // btnminimize
+            // 
+            this.btnminimize.BackColor = System.Drawing.Color.Transparent;
+            this.btnminimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnminimize.Location = new System.Drawing.Point(10, 7);
+            this.btnminimize.Name = "btnminimize";
+            this.btnminimize.Size = new System.Drawing.Size(30, 30);
+            this.btnminimize.TabIndex = 6;
+            this.btnminimize.Text = "_";
+            this.btnminimize.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1044, 12);
+            this.button2.Location = new System.Drawing.Point(82, 7);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 30);
             this.button2.TabIndex = 4;
             this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label1
             // 
@@ -370,19 +363,6 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "VEHICLE PURCHASE DETAILS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // btnminimize
-            // 
-            this.btnminimize.BackColor = System.Drawing.Color.Transparent;
-            this.btnminimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnminimize.Location = new System.Drawing.Point(972, 12);
-            this.btnminimize.Name = "btnminimize";
-            this.btnminimize.Size = new System.Drawing.Size(30, 30);
-            this.btnminimize.TabIndex = 6;
-            this.btnminimize.Text = "_";
-            this.btnminimize.UseVisualStyleBackColor = false;
-            this.btnminimize.Click += new System.EventHandler(this.btnminimize_Click_1);
             // 
             // panel3
             // 
@@ -392,36 +372,58 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(945, 41);
             this.panel3.TabIndex = 76;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel2.Controls.Add(this.btnminimize);
-            this.panel2.Controls.Add(this.btnmaxmin);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(266, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1086, 47);
-            this.panel2.TabIndex = 75;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btndashboard);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 41);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(266, 774);
+            this.panel1.Size = new System.Drawing.Size(266, 733);
             this.panel1.TabIndex = 74;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(7, 74);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(257, 119);
+            this.pictureBox4.TabIndex = 41;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.button7);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel8.Location = new System.Drawing.Point(0, 650);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(266, 83);
+            this.panel8.TabIndex = 18;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(-120, 13);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(359, 48);
+            this.button7.TabIndex = 16;
+            this.button7.Text = "Sign OUT";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
@@ -440,26 +442,6 @@
             this.button8.Text = "Purchase Details";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(-120, 677);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(359, 48);
-            this.button7.TabIndex = 16;
-            this.button7.Text = "Sign OUT";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click_1);
             // 
             // button4
             // 
@@ -478,7 +460,6 @@
             this.button4.Text = "Sales History";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button3
             // 
@@ -497,7 +478,6 @@
             this.button3.Text = "Statistics";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button1
             // 
@@ -516,7 +496,6 @@
             this.button1.Text = "Add Vehicle";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btndashboard
             // 
@@ -535,7 +514,29 @@
             this.btndashboard.Text = "Dashboard";
             this.btndashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndashboard.UseVisualStyleBackColor = false;
-            this.btndashboard.Click += new System.EventHandler(this.btndashboard_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label2.Location = new System.Drawing.Point(416, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "DASHBOARD";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1352, 41);
+            this.panel4.TabIndex = 77;
             // 
             // SystemDashboard
             // 
@@ -544,10 +545,10 @@
             this.ClientSize = new System.Drawing.Size(1352, 774);
             this.Controls.Add(this.panelChart);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SystemDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -555,12 +556,15 @@
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -568,11 +572,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panelChart;
-        private System.Windows.Forms.Label lblcashvalue;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
@@ -583,22 +582,30 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblcashvalue;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtcashvalue;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btnmaxmin;
+        private System.Windows.Forms.Button btnminimize;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnminimize;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btndashboard;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel4;
     }
 }

@@ -36,30 +36,6 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void btnmaxmin_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
-
-        private void btnminimize_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
-
         private void btndashboard_Click(object sender, EventArgs e)
         {
             SystemDashboard dash = new SystemDashboard();
@@ -67,30 +43,10 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Add_Vehicle add = new Add_Vehicle();
-            add.Show();
-            this.Hide();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Purchase_Details pu = new Purchase_Details();
-            pu.Show();
-            this.Hide();
-        }
-
         private void button9_Click(object sender, EventArgs e)
         {
             Show_Vehicles show = new Show_Vehicles();
             show.ShowDialog();
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            createReservation create = new createReservation();
-            create.Show();
         }
 
         private void LoadCashValueToLabel()
@@ -125,123 +81,6 @@ namespace WindowsFormsApp1
         }
 
 
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            decimal addvalue;
-            if (decimal.TryParse(txtcashvalue.Text, out addvalue))
-            {
-                try
-                {
-                    using (SqlConnection conn = new SqlConnection(connstring))
-                    {
-                        conn.Open();
-
-                        string selectQuery = "SELECT cash FROM cashValue WHERE id = 1";
-                        SqlCommand selectCmd = new SqlCommand(selectQuery, conn);
-                        object result = selectCmd.ExecuteScalar();
-
-                        decimal currentValue = result != null ? Convert.ToDecimal(result) : 0.00m;
-                        decimal updatedValue = currentValue + addvalue;
-
-                        string updateQuery = "UPDATE CashValue SET cash = @updatedValue WHERE id = 1";
-                        SqlCommand updateCmd = new SqlCommand(updateQuery, conn);
-                        updateCmd.Parameters.AddWithValue("@updatedValue", updatedValue);
-
-                        updateCmd.ExecuteNonQuery();
-                        LoadCashValueToLabel();
-                        txtcashvalue.Clear();
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error updating cash value: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Invalid selling price. Please enter a valid number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            decimal addvalue;
-            if (decimal.TryParse(txtcashvalue.Text, out addvalue))
-            {
-                try
-                {
-                    using (SqlConnection conn = new SqlConnection(connstring))
-                    {
-                        conn.Open();
-
-                        string selectQuery = "SELECT cash FROM cashValue WHERE id = 1";
-                        SqlCommand selectCmd = new SqlCommand(selectQuery, conn);
-                        object result = selectCmd.ExecuteScalar();
-
-                        decimal currentValue = result != null ? Convert.ToDecimal(result) : 0.00m;
-                        decimal updatedValue = currentValue - addvalue;
-
-                        string updateQuery = "UPDATE CashValue SET cash = @updatedValue WHERE id = 1";
-                        SqlCommand updateCmd = new SqlCommand(updateQuery, conn);
-                        updateCmd.Parameters.AddWithValue("@updatedValue", updatedValue);
-
-                        updateCmd.ExecuteNonQuery();
-                        LoadCashValueToLabel();
-                        txtcashvalue.Clear();
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error updating cash value: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Invalid selling price. Please enter a valid number.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Sales_History sale = new Sales_History();
-            sale.Show();
-            this.Hide();
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            useraccount user = new useraccount();
-            user.ShowDialog();
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-            shopdetails shop = new shopdetails();
-            shop.ShowDialog();
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to run the Day-End Process?",
-                                         "Confirm Day-End",
-                                         MessageBoxButtons.YesNo,
-                                         MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                RunDayEndProcess();
-            }
-            else
-            {
-                MessageBox.Show("Day-End Process cancelled.", "Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
 
         private void RunDayEndProcess()
         {
@@ -333,23 +172,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to run the Month-End Process?",
-                                         "Confirm Day-End",
-                                         MessageBoxButtons.YesNo,
-                                         MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                RunMonthEndProcess();
-            }
-            else
-            {
-                MessageBox.Show("Month-End Process cancelled.", "Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         private void RunYearEndProcess()
         {
             try
@@ -406,23 +228,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Error during Year-End Process: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to run the Year-End Process?",
-                                          "Confirm Month-End",
-                                          MessageBoxButtons.YesNo,
-                                          MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                RunYearEndProcess();
-            }
-            else
-            {
-                MessageBox.Show("Year-End Process cancelled.", "Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
         public void LoadWeeklyChart()
         {
             Dictionary<string, decimal> salesData = new Dictionary<string, decimal>();
@@ -476,32 +281,6 @@ ORDER BY WeekDayOrder";
 
             chart1.Series.Add(series);
             chart1.Legends[0].Enabled = true;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Statistics s = new Statistics();
-            s.Show();
-            this.Hide();
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            createcustomer cus = new createcustomer();
-            cus.ShowDialog();
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            createpayment pay = new createpayment();
-            pay.ShowDialog();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            logout log = new logout();
-            log.Show();
-            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -1,6 +1,6 @@
-﻿namespace ASM_System_CGP
+﻿namespace WindowsFormsApp1
 {
-    partial class Sales_Dashboard
+    partial class saller_dashboard
     {
         /// <summary>
         /// Required designer variable.
