@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Chithma Dilmin\\Documents\\GitHub\\ASM-System-CGP\\ASM-System_CGP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}|ASM-System_CGP\\ASM-System_CGP.csproj|C:\\Users\\Chithma Dilmin\\Documents\\GitHub\\ASM-System-CGP\\ASM-System_CGP\\asm-system_cgp\\systemdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}|ASM-System_CGP\\ASM-System_CGP.csproj|c:\\users\\chithma dilmin\\documents\\github\\asm-system-cgp\\asm-system_cgp\\asm-system_cgp\\systemdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}|ASM-System_CGP\\ASM-System_CGP.csproj|solutionrelative:asm-system_cgp\\systemdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}|ASM-System_CGP\\ASM-System_CGP.csproj|solutionrelative:asm-system_cgp\\sales_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}|ASM-System_CGP\\ASM-System_CGP.csproj|c:\\users\\chithma dilmin\\documents\\github\\asm-system-cgp\\asm-system_cgp\\asm-system_cgp\\systemlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}|ASM-System_CGP\\ASM-System_CGP.csproj|C:\\Users\\Chithma Dilmin\\Documents\\GitHub\\ASM-System-CGP\\ASM-System_CGP\\asm-system_cgp\\systemlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C438D75-1AC4-4B4B-83C4-E2D82BF6B123}|ASM-System_CGP\\ASM-System_CGP.csproj|solutionrelative:asm-system_cgp\\systemlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,8 +46,7 @@
               "RelativeToolTip": "ASM-System_CGP\\Sales_Dashboard.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T16:44:17.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T16:44:17.056Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "ToolTip": "C:\\Users\\Chithma Dilmin\\Documents\\GitHub\\ASM-System-CGP\\ASM-System_CGP\\ASM-System_CGP\\Sales_Dashboard.cs [Design]",
               "RelativeToolTip": "ASM-System_CGP\\Sales_Dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T16:38:54.154Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-24T16:38:54.154Z"
             },
             {
               "$type": "Document",
@@ -71,8 +69,7 @@
               "RelativeToolTip": "ASM-System_CGP\\SystemLogin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAALQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T04:32:30.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T04:32:30.526Z"
             },
             {
               "$type": "Document",

@@ -101,5 +101,23 @@
   <ItemGroup>
     <None Include="Resources\asm-system-logo-stretched.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconsmind-Outline-Dashboard.512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4274912.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6821002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9764516.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill_12149247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14875712.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

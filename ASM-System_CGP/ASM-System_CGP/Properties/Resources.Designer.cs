@@ -63,9 +63,69 @@ namespace ASM_System_CGP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _14875712 {
+            get {
+                object obj = ResourceManager.GetObject("14875712", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4274912 {
+            get {
+                object obj = ResourceManager.GetObject("4274912", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6821002 {
+            get {
+                object obj = ResourceManager.GetObject("6821002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9764516 {
+            get {
+                object obj = ResourceManager.GetObject("9764516", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap asm_system_logo_stretched {
             get {
                 object obj = ResourceManager.GetObject("asm-system-logo-stretched", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bill_12149247 {
+            get {
+                object obj = ResourceManager.GetObject("bill_12149247", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Iconsmind_Outline_Dashboard_512 {
+            get {
+                object obj = ResourceManager.GetObject("Iconsmind-Outline-Dashboard.512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
