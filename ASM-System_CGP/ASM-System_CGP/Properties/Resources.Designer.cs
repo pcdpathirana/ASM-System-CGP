@@ -129,5 +129,15 @@ namespace ASM_System_CGP.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_04_13_at_12_03_00_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2025-04-13_at_12.03.00-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
